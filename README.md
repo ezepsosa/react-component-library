@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+# React Component Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React component library designed to provide a variety of reusable components for web applications.
 
-Currently, two official plugins are available:
+## Objective
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The main objective of this component library is to ease the development of web applications using React. By providing a wide range of ready-to-use components, we aim to reduce the time and complexity associated with creating consistent and appealing user interfaces.
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Reusable Components:** A collection of ready-to-use components spanning various design needs.
+- **Flexible Customization:** Each component is highly customizable and can be easily adapted to specific design requirements.
+- **Seamless Integration:** Smooth integration with existing React projects, as well as new applications.
 
-- Configure the top-level `parserOptions` property like this:
+## Practice
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+This project is also created as a practice exercise for honing React skills. It provides an opportunity for developers to experiment with React components, practice component composition, and explore best practices in component-based development.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Installation
+
+To start using the component library in your React project, simply follow these steps:
+
+1. Install the library using npm:
+
+```bash
+npm install your-library-name
