@@ -1,0 +1,73 @@
+// Variables
+
+// Background colors
+$danger-background-color: #fee2e2;
+$warning-background-color: #fef3c7;
+$success-background-color: #d1fae5;
+$gray-background-color: #f3f4f6;
+$info-background-color: #dbeafe;
+$purple-background-color: #e0e7ff;
+$violet-background-color: #ede9fe;
+$pink-background-color: #fce7f3;
+
+// Text colors
+$danger-text-color: #991b1b;
+$warning-text-color: #92400e;
+$success-text-color: #065f46;
+$gray-text-color: #1f2937;
+$info-text-color: #1e40af;
+$purple-text-color: #3730a3;
+$violet-text-color: #5b21b6;
+$pink-text-color: #9d174d;
+
+// Mapa de colores
+$color-map: (
+  danger: (
+    background: $danger-background-color,
+    text: $danger-text-color,
+  ),
+  warning: (
+    background: $warning-background-color,
+    text: $warning-text-color,
+  ),
+  success: (
+    background: $success-background-color,
+    text: $success-text-color,
+  ),
+  info: (
+    background: $info-background-color,
+    text: $info-text-color,
+  ),
+  custom-gray: (
+    background: $gray-background-color,
+    text: $gray-text-color,
+  ),
+  custom-purple: (
+    background: $purple-background-color,
+    text: $purple-text-color,
+  ),
+  custom-violet: (
+    background: $violet-background-color,
+    text: $violet-text-color,
+  ),
+  custom-pink: (
+    background: $pink-background-color,
+    text: $pink-text-color,
+  ),
+);
+
+// Estilos de Badges
+@each $name, $colors in $color-map {
+  .badge-#{$name} {
+    background-color: map-get($colors, background);
+    color: map-get($colors, text);
+    padding: 0.75rem 2.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.badge-pill {
+  border-radius: 1.25rem;
+}
